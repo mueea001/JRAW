@@ -121,7 +121,7 @@ class RedditClient internal constructor(
     }
 
     @Throws(NetworkException::class)
-    private fun request(r: HttpRequest, retryCount: Int = 0): HttpResponse {
+    public fun request(r: HttpRequest, retryCount: Int = 0): HttpResponse {
         if (loggedOut)
             throw IllegalStateException("This client is logged out and should not be used anymore")
 
