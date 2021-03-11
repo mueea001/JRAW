@@ -59,7 +59,6 @@ public abstract class Comment implements PublicContribution<CommentReference>, N
     public abstract String getBody();
     
     @NotNull
-    @Override
     @Json(name="body_html") public abstract String getBodyHtml();
 
     @Enveloped
